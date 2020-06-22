@@ -20,9 +20,12 @@ const Button = styled.button`
 `;
 
 const Container = styled.div`
-height: 100vh;  
-width: 100%;
-background-color: pink;
+  height: 100vh;  
+  width: 100%;
+  background-color: pink;
+  ${Card}{
+    background-color: ${props => props.theme.mainColor}
+  }
 `;
 
 function App() {
